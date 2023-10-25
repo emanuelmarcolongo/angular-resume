@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-resume';
+  resumeInfo!: any;
+  headerInfo: any;
+
+  constructor() {
+    this.headerInfo = {
+      firstName: 'Carlos Emanuel',
+      lastName: 'Marcolongo',
+      job: 'Desenvolvedor Web',
+      socials: {
+        linkedin: 'https://www.linkedin.com/in/emanuelmarcolongo/',
+        github: 'https://www.github.com/emanuelmarcolongo/'
+      }
+    }
+  }
 }

@@ -1,0 +1,26 @@
+<section id="headerSection" class="flex items-center justify-around">
+
+    <article id="header-photo">
+        <img alt="myPhoto" width="50px" src="../../../assets/foto.png" >
+    </article>
+
+    <article id="header-information">
+        <p>{{ headerInfo.firstName}}</p>
+    
+        <p>{{ headerInfo.job}}</p>  
+    </article>
+    
+    <article id="header-socials">
+        <a [href]="headerInfo.socials.linkedin">
+           LinkedIn
+        </a>
+
+        <a [href]="headerInfo.socials.github">
+            GitHub
+         </a>
+    </article>
+
+</section>
+
+
+
