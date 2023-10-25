@@ -1,26 +1,20 @@
 <section id="headerSection" class="flex items-center justify-around">
+  <article id="header-photo">
+    <img alt="myPhoto" width="50px" src="../../../assets/foto.png" />
+    <p>{{ headerInfo.location }}</p>
+    <p>{{ headerInfo.email }}</p>
+    <p>{{ headerInfo.phone }}</p>
+  </article>
 
-    <article id="header-photo">
-        <img alt="myPhoto" width="50px" src="../../../assets/foto.png" >
-    </article>
+  <article id="header-information">
+    <p>{{ headerInfo.firstName }} {{ headerInfo.lastName }}</p>
 
-    <article id="header-information">
-        <p>{{ headerInfo.firstName}}</p>
-    
-        <p>{{ headerInfo.job}}</p>  
-    </article>
-    
-    <article id="header-socials">
-        <a [href]="headerInfo.socials.linkedin">
-           LinkedIn
-        </a>
+    <p>{{ headerInfo.job }}</p>
+  </article>
 
-        <a [href]="headerInfo.socials.github">
-            GitHub
-         </a>
-    </article>
+  <article id="header-socials">
+    <a [href]="headerInfo.socials.linkedin"> LinkedIn </a>
 
+    <a [href]="headerInfo.socials.github"> GitHub </a>
+  </article>
 </section>
-
-
-
