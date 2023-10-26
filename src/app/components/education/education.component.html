@@ -1,0 +1,41 @@
+<section
+  id="headerSection"
+  class="flex items-center justify-between p-5 px-32 bg-white w-4/5 m-auto"
+>
+  <ul class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+    <li
+      *ngFor="let item of headerInfo.education; let i = index"
+      class="border-l-indigo-400 border-l-8 p-4 border-b-2 border-gray-300 drop-shadow-xl"
+    >
+      <article
+        id="educationInfo-header"
+        [class]="
+          i % 2 === 0
+            ? 'md:col-span-1 lg:col-span-1'
+            : 'md:col-span-1 lg:col-span-1'
+        "
+      >
+        <p class="font-semibold">{{ item.course }}</p>
+        <p class="text-sm">{{ item.institution }}</p>
+        <p class="text-sm">{{ item.startDate }} / {{ item.conclusionDate }}</p>
+      </article>
+      <article id="educationInfo-body">
+        <p class="text-sm">{{ item.about }}</p>
+        <div class="bg-yellow-50 mt-4">
+          <p class="text-sm" *ngIf="additionalInfo[i]">
+            {{ item.additionalInfo }}
+          </p>
+        </div>
+        <img
+          *ngIf="item.additionalInfo"
+          class="hover:cursor-pointer transition-all ease-linear"
+          [ngClass]="{ 'rotate-180': additionalInfo[i] }"
+          alt="aditionalInfoArrow"
+          src="../../../assets/arrow-down.svg"
+          width="40"
+          (click)="toggleAdditionalInfo(i)"
+        />
+      </article>
+    </li>
+  </ul>
+</section>
