@@ -1,20 +1,39 @@
-<section id="headerSection" class="flex items-center justify-around">
+<section
+  id="headerSection"
+  class="flex items-center justify-around p-5 bg-white w-4/5 m-auto"
+>
   <article id="header-photo">
-    <img alt="myPhoto" width="50px" src="../../../assets/foto.png" />
-    <p>{{ headerInfo.location }}</p>
-    <p>{{ headerInfo.email }}</p>
-    <p>{{ headerInfo.phone }}</p>
+    <img
+      alt="myPhoto"
+      width="150px"
+      src="../../../assets/foto.png"
+      class="rounded-[50%]"
+    />
   </article>
 
-  <article id="header-information">
-    <p>{{ headerInfo.firstName }} {{ headerInfo.lastName }}</p>
+  <article
+    id="header-information"
+    class="flex flex-col items-center justify-center"
+  >
+    <p class="text-xl font-semibold">
+      {{ headerInfo.firstName }} {{ headerInfo.lastName }}
+    </p>
 
-    <p>{{ headerInfo.job }}</p>
+    <p class="text-gray-600 font-semibold">{{ headerInfo.job }}</p>
+    <div class="text-sm flex flex-col items-center justify-center mt-10">
+      <p>{{ headerInfo.location }}</p>
+      <p>{{ headerInfo.email }}</p>
+      <p>{{ headerInfo.phone }}</p>
+    </div>
   </article>
 
-  <article id="header-socials">
-    <a [href]="headerInfo.socials.linkedin"> LinkedIn </a>
+  <article id="header-socials" class="flex flex-col gap-6">
+    <a target="_blank" [href]="headerInfo.socials.linkedin"
+      ><img alt="LinkedinIcon" src="../../../assets/linkedin.svg" width="40" />
+    </a>
 
-    <a [href]="headerInfo.socials.github"> GitHub </a>
+    <a target="_blank" [href]="headerInfo.socials.github"
+      ><img alt="LinkedinIcon" src="../../../assets/github.svg" width="40" />
+    </a>
   </article>
 </section>
