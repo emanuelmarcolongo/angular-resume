@@ -4,4 +4,6 @@
   <app-about [headerInfo]="headerInfo"></app-about>
 
   <app-education [headerInfo]="headerInfo"></app-education>
+
+  <app-contact (contactEmitter)="handleContactForm($event)"></app-contact>
 </div>

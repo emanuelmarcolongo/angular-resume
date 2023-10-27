@@ -14,6 +14,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatDividerModule } from '@angular/material/divider';
+import { ContactComponent } from './components/contact/contact.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,7 @@ import { MatDividerModule } from '@angular/material/divider';
     HeaderComponent,
     AboutComponent,
     EducationComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,6 +36,7 @@ import { MatDividerModule } from '@angular/material/divider';
     MatIconModule,
     MatDialogModule,
     MatDividerModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

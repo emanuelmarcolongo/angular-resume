@@ -84,4 +84,8 @@ export class AppComponent {
       ],
     };
   }
+
+  handleContactForm(contactData: any) {
+    console.log(contactData);
+  }
 }

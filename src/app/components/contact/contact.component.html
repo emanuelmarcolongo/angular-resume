@@ -1,0 +1,50 @@
+<div class="h-100 flex items-center justify-center mt-10">
+  <mat-card class="w-4/5">
+    <mat-card-header class="flex justify-center mb-3">
+      <mat-card-title> Contato </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form [formGroup]="contactForm" class="flex flex-col">
+        <mat-form-field>
+          <mat-label>E-mail</mat-label>
+          <input matInput formControlName="email" name="email" />
+
+          <mat-error>
+            {{
+              contactForm.controls["email"].errors?.["required"] &&
+                getErrorMessage("required")
+            }}
+            {{
+              contactForm.controls["email"].errors?.["email"] &&
+                getErrorMessage("email")
+            }}
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Mensagem</mat-label>
+          <textarea
+            type="text"
+            matInput
+            formControlName="message"
+            name="message"
+          ></textarea>
+          <mat-error>
+            {{
+              contactForm.controls["message"].errors?.["required"] &&
+                getErrorMessage("required")
+            }}
+          </mat-error>
+        </mat-form-field>
+        <button
+          [disabled]="contactForm.invalid"
+          mat-flat-button
+          color="primary"
+          class="w-100"
+          (click)="sendMessage()"
+        >
+          Enviar
+        </button>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>
