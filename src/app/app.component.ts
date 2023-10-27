@@ -1,15 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'angular-resume';
   resumeInfo!: any;
   headerInfo: any;
-
+  messages!: any[];
   constructor() {
     this.headerInfo = {
       firstName: 'Carlos Emanuel',
@@ -85,7 +85,17 @@ export class AppComponent {
     };
   }
 
+  ngOnInit() {
+    this.messages = JSON.parse(localStorage.getItem('contactMessages') || '[]');
+  }
+
   handleContactForm(contactData: any) {
-    console.log(contactData);
+    this.messages.push(contactData);
+    const stringfiedMessages = JSON.stringify(this.messages);
+    localStorage.setItem('contactMessages', stringfiedMessages);
+
+    if (contactData.email === 'showmessage@email.com') {
+      console.log(this.messages);
+    }
   }
 }

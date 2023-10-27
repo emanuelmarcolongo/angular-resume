@@ -29,6 +29,8 @@ export class ContactComponent {
     };
 
     this.contactEmitter.emit(this.contactMessage);
+
+    this.contactForm.reset();
   }
 
   getErrorMessage(controlName: string) {
