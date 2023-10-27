@@ -1,6 +1,6 @@
 <section
   id="headerSection"
-  class="flex items-center justify-between py-16 px-32 bg-white w-4/5 m-auto"
+  class="flex-col lg:flex-row flex items-center justify-between py-16 px-32 bg-white w-4/5 m-auto"
 >
   <article id="header-photo">
     <img
@@ -15,7 +15,7 @@
     id="header-information"
     class="flex flex-col items-center justify-center"
   >
-    <p class="text-xl font-semibold">
+    <p class="text-xl font-semibold text-center">
       {{ headerInfo.firstName }} {{ headerInfo.lastName }}
     </p>
 
@@ -27,7 +27,7 @@
     </div>
   </article>
 
-  <article id="header-socials" class="flex flex-col gap-6">
+  <article id="header-socials" class="flex flex-col gap-6 lg:mt-0 mt-16">
     <a target="_blank" [href]="headerInfo.socials.linkedin"
       ><img alt="LinkedinIcon" src="../../../assets/linkedin.svg" width="40" />
     </a>

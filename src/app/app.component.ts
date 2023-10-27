@@ -35,8 +35,7 @@ export class AppComponent implements OnInit {
           startDate: '2023-07-27T14:30:00.000Z',
           conclusionDate: '2027-07-27T14:30:00.000Z',
           about: `Curso superior em Ciência da Computação, meu objetivo é aprender mais sobre a base da programação, melhorar minha lógica,
-          poder me familiarizar com outras linguagens e adquirir todo conhecimento possível para me desenvolver na área. Assim como estar apto
-          a oportunidades de estágio na área`,
+          poder me familiarizar com outras linguagens e adquirir todo conhecimento possível para me desenvolver e estagiar na área de tecnologia.`,
           additionalInfo:
             'O curso de Ciência da Computação voltado para o desenvolvimento full stack é projetado para proporcionar aos estudantes uma compreensão abrangente dos aspectos teóricos e práticos da construção de aplicativos web e sistemas de software completos. Essa formação busca capacitar os alunos a se tornarem profissionais versáteis, capazes de lidar com todas as camadas de um projeto de desenvolvimento de software.',
         },
@@ -52,7 +51,7 @@ export class AppComponent implements OnInit {
           aprender JavaScript/TypeScript e criar minhas primeiras aplicações web. Acima de tudo, nesse bootcamp eu aprendi a aprender, a
           ter capacidade e saber utilizar ferramentas para buscar conhecimento por conta própria!`,
           additionalInfo: `Formação intensiva de 1200h com projetos práticos, desenvolvimento de aplicações front-end, back-end e full stack com banco
-          de dados como MongoDb / PostgreSQL`,
+          de dados como MongoDb / PostgreSQL.`,
         },
         {
           id: 2,
@@ -78,7 +77,7 @@ export class AppComponent implements OnInit {
           conclusionDate: '2023-11-27T14:30:00.000Z',
           about: `Bootcamp de desenvolvimento web back-end utilizando tecnologias como Express/PostgreSQL/Knex. Estou tendo a oportunidade de reforçar
           meus conhecimentos em back-end com NodeJs e principalmente desenvolver trabalhos em grupos, utilizando
-          metodologia ágil SCRUM além de poder também estar aprendendo mais e mais sobre versionamento de código e utilização de branches no Github`,
+          metodologia ágil SCRUM e versionamento de código no GitHub.`,
           additionalInfo: '',
         },
       ],

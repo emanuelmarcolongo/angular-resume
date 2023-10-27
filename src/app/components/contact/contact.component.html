@@ -1,7 +1,7 @@
 <div class="h-100 flex items-center justify-center mt-10">
-  <mat-card class="w-4/5">
+  <mat-card class="w-4/5 p-5 px-32 rounded-xl">
     <mat-card-header class="flex justify-center mb-3">
-      <mat-card-title> Contato </mat-card-title>
+      <p class="font-semibold text-xl">Entre em contato:</p>
     </mat-card-header>
     <mat-card-content>
       <form [formGroup]="contactForm" class="flex flex-col">
@@ -9,7 +9,7 @@
           <mat-label>E-mail</mat-label>
           <input matInput formControlName="email" name="email" />
 
-          <mat-error>
+          <mat-error class="mb-4">
             {{
               contactForm.controls["email"].errors?.["required"] &&
                 getErrorMessage("required")
