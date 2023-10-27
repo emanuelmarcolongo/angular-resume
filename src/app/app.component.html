@@ -1,9 +1,9 @@
 <div class="bg-gray-100 p-10 space-y-10">
-  <app-header [headerInfo]="headerInfo"></app-header>
+  <app-header [resumeInfo]="resumeInfo"></app-header>
 
-  <app-about [headerInfo]="headerInfo"></app-about>
+  <app-about [aboutInfo]="resumeInfo.about"></app-about>
 
-  <app-education [headerInfo]="headerInfo"></app-education>
+  <app-education [educationInfo]="resumeInfo.education"></app-education>
 
   <app-contact (contactEmitter)="handleContactForm($event)"></app-contact>
 </div>

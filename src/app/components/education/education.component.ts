@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { EducationInfoData } from 'src/app/models/resume-info.model';
 
 @Component({
   selector: 'app-education',
@@ -6,7 +7,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./education.component.scss'],
 })
 export class EducationComponent {
-  @Input() headerInfo!: any;
+  @Input() educationInfo!: EducationInfoData[];
 
   additionalInfo: { [key: number]: boolean };
 

@@ -6,5 +6,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./about.component.scss'],
 })
 export class AboutComponent {
-  @Input() headerInfo!: any;
+  @Input() aboutInfo!: string;
 }

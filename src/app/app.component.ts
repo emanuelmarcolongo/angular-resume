@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ResumeInfoData } from './models/resume-info.model';
 
 @Component({
   selector: 'app-root',
@@ -7,11 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   title = 'angular-resume';
-  resumeInfo!: any;
-  headerInfo: any;
+  resumeInfo: ResumeInfoData;
   messages!: any[];
   constructor() {
-    this.headerInfo = {
+    this.resumeInfo = {
       firstName: 'Carlos Emanuel',
       lastName: 'Marcolongo',
       job: 'Desenvolvedor Web',
