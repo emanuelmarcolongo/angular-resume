@@ -32,8 +32,8 @@ export class AppComponent implements OnInit {
           type: 'Superior',
           currentOn: true,
           course: 'Bacharelado - Ciência da Computação',
-          startDate: '07-2023',
-          conclusionDate: '07-2027',
+          startDate: '2023-07-27T14:30:00.000Z',
+          conclusionDate: '2027-07-27T14:30:00.000Z',
           about: `Curso superior em Ciência da Computação, meu objetivo é aprender mais sobre a base da programação, melhorar minha lógica,
           poder me familiarizar com outras linguagens e adquirir todo conhecimento possível para me desenvolver na área. Assim como estar apto
           a oportunidades de estágio na área`,
@@ -46,8 +46,8 @@ export class AppComponent implements OnInit {
           type: 'Bootcamp',
           currentOn: false,
           course: 'Desenvolvimento Web Full Stack',
-          startDate: '07-2022',
-          conclusionDate: '05-2023',
+          startDate: '2022-07-27T14:30:00.000Z',
+          conclusionDate: '2023-05-27T14:30:00.000Z',
           about: `Bootcamp de desenvolvimento web full stack de 10 meses, onde eu puder dar meus primeiros passos no mundo do desenvolvimento,
           aprender JavaScript/TypeScript e criar minhas primeiras aplicações web. Acima de tudo, nesse bootcamp eu aprendi a aprender, a
           ter capacidade e saber utilizar ferramentas para buscar conhecimento por conta própria!`,
@@ -60,11 +60,11 @@ export class AppComponent implements OnInit {
           type: 'Bootcamp',
           currentOn: true,
           course: 'Desenvolvimento Web FrontEnd - Angular',
-          startDate: '07-2023',
+          startDate: '2023-07-27T14:30:00.000Z',
+          conclusionDate: '2023-11-27T14:30:00.000Z',
           about: `Bootcamp de desenvolvimento web front-end voltado para o framework Angular, fui um dos 300 selecionados em mais de 50 mil bolsas iniciais,
           pertencendo a iniciativa Santander Coders 2023 e tendo a Ada Tech como instituição de ensino. \n
           Busco aqui aprender esse novo framework assim como o paradigma da programação orientada a objetos e fortalecer o TypeScript. `,
-          conclusionDate: '11-2023',
           additionalInfo:
             '*Curiosidade: esse site é inclusive um dos projetos desenvolvido durante esse bootcamp em Angular!',
         },
@@ -74,8 +74,8 @@ export class AppComponent implements OnInit {
           type: 'Bootcamp',
           currentOn: true,
           course: 'Desenvolvimento Web BackEnd - Node',
-          startDate: '07-2023',
-          conclusionDate: '11-2023',
+          startDate: '2023-07-27T14:30:00.000Z',
+          conclusionDate: '2023-11-27T14:30:00.000Z',
           about: `Bootcamp de desenvolvimento web back-end utilizando tecnologias como Express/PostgreSQL/Knex. Estou tendo a oportunidade de reforçar
           meus conhecimentos em back-end com NodeJs e principalmente desenvolver trabalhos em grupos, utilizando
           metodologia ágil SCRUM além de poder também estar aprendendo mais e mais sobre versionamento de código e utilização de branches no Github`,

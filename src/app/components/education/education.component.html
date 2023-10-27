@@ -10,7 +10,10 @@
       <article id="educationInfo-header">
         <p class="font-semibold">{{ item.course }}</p>
         <p class="text-sm">{{ item.institution }}</p>
-        <p class="text-sm">{{ item.startDate }} / {{ item.conclusionDate }}</p>
+        <p class="text-sm">
+          {{ item.startDate | date: "MM/yyyy" }} -
+          {{ item.conclusionDate | date: "MM/yyyy" }}
+        </p>
       </article>
       <article id="educationInfo-body">
         <p class="text-sm">{{ item.about }}</p>
