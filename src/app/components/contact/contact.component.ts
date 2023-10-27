@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { ContactFormData } from 'src/app/models/contact-data.model';
 
 @Component({
   selector: 'app-contact',
@@ -9,7 +10,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 export class ContactComponent {
   @Output() contactEmitter = new EventEmitter<any>();
   contactForm!: FormGroup;
-  contactMessage!: any;
+  contactMessage!: ContactFormData;
 
   constructor() {
     this.contactFormBuild();

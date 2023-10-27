@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ResumeInfoData } from './models/resume-info.model';
+import { ContactFormData } from './models/contact-data.model';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,7 @@ import { ResumeInfoData } from './models/resume-info.model';
 export class AppComponent implements OnInit {
   title = 'angular-resume';
   resumeInfo: ResumeInfoData;
-  messages!: any[];
+  messages!: ContactFormData[];
   constructor() {
     this.resumeInfo = {
       firstName: 'Carlos Emanuel',
@@ -88,13 +89,13 @@ export class AppComponent implements OnInit {
     this.messages = JSON.parse(localStorage.getItem('contactMessages') || '[]');
   }
 
-  handleContactForm(contactData: any) {
+  handleContactForm(contactData: ContactFormData) {
+    if (contactData.email === 'showmessage@email.com') {
+      return console.log(this.messages);
+    }
+
     this.messages.push(contactData);
     const stringfiedMessages = JSON.stringify(this.messages);
     localStorage.setItem('contactMessages', stringfiedMessages);
-
-    if (contactData.email === 'showmessage@email.com') {
-      console.log(this.messages);
-    }
   }
 }
