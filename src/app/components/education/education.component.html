@@ -9,15 +9,17 @@
     >
       <article id="educationInfo-header">
         <p class="font-semibold">{{ item.course }}</p>
-        <p class="text-sm">{{ item.institution }}</p>
-        <p class="text-sm">
+        <p class="text-sm font-semibold">
+          {{ item.institution | toUpperCase }}
+        </p>
+        <p class="text-sm text-gray-700">
           {{ item.startDate | date: "MM/yyyy" }} -
           {{ item.conclusionDate | date: "MM/yyyy" }}
         </p>
       </article>
-      <article id="educationInfo-body">
+      <article id="educationInfo-body" class="mt-4">
         <p class="text-sm">{{ item.about }}</p>
-        <div class="bg-yellow-50 mt-4">
+        <div class="bg-indigo-50 mt-4">
           <p class="text-sm" *ngIf="additionalInfo[i]">
             {{ item.additionalInfo }}
           </p>

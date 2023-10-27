@@ -16,6 +16,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatDividerModule } from '@angular/material/divider';
 import { ContactComponent } from './components/contact/contact.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ToUpperCasePipe } from './components/pipes/toUpperCase.pipe';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     AboutComponent,
     EducationComponent,
     ContactComponent,
+    ToUpperCasePipe,
   ],
   imports: [
     BrowserModule,
